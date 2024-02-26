@@ -16,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className=" bg-blue-300 p-[1rem]">
+          <p>header</p>
+        </header>
+        {children}
+        <footer className=" bg-blue-950 p-[1rem]">
+          <p>footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
